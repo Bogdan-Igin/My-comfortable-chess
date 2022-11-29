@@ -10,13 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="chess.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Bohdan chess app</title>
   </head>
   <body>
     <header class="main-header">
       <h1>My comfortable chess</h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="#" class="main-nav-link">About</a></li>
+          <li><a href="#" class="main-nav-link">Sign in</a></li>
+          <li><a href="#" class="main-nav-link">Log in</a></li>
+        </ul>
+      </nav>
     </header>
+    <section class="section-left">Контент слева</section>
     <section class="сhess-board">
       <div class="border-left">
         <div>8</div>
@@ -123,11 +131,22 @@
         <div class="h1"></div>
       </div>
     </section>
-    <section class="section-left">Контент слева</section>
-    <section class="section-right">Контент справа</section>
+    <section class="section-right">
+      <div class="clock-left">Часы игрок</div>
+      <div class="clock-right">Часы противник</div>
+      <div class="moves-notes">moves-notes</div>
+      <div class="six-buttons">
+        <button class="btn">Ход назад</button>
+        <button class="btn">Ход вперед</button>
+        <button class="btn">Сдаться</button>   
+        <button class="btn">Начать партию</button>
+        <button class="btn">Пауза</button>
+        <button class="btn">Закончить партию</button>
+      </div>
+    </section>
     <footer>
       <p class="copyright">Bohdan Ihin &#169 2022</p>
-      <a href="#" class="how-to-use">How to use</a>
+      <p class="tagline">It's all about power of grid!</p>
       <p class="e-mail">my e-mail: ********@gmail.com</p>
     </footer>
   </body>

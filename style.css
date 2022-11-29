@@ -1,0 +1,236 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 6rem 1fr 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+/* HEADER */
+
+.main-header {
+  background-color: antiquewhite;
+  color: sienna;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+  grid-column: 1 / -1;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: left;
+  margin-left: 4rem;
+  font-size: 3.1rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  list-style: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-right: 7rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: sienna;
+}
+
+/* SECTION LEFT */
+
+.section-left {
+  min-width: 30rem;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 75%;
+  height: 90%;
+  justify-self: center;
+  border: 4px solid antiquewhite;
+}
+
+/* SECTION CHESS BORDER */
+
+.сhess-board {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(8, 1fr) 0.5fr;
+  grid-template-rows: 0.5fr repeat(8, 1fr) 0.5fr;
+  background-color: antiquewhite;
+  min-height: 40rem;
+  min-width: 40rem;
+  border: 6px solid sienna;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.border-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / -2;
+  display: grid;
+  grid-auto-rows: repeat(8, 1fr);
+  align-items: center;
+  justify-items: center;
+  color: sienna;
+  font-size: 1.28rem;
+  font-weight: 500;
+  border-top: 4px solid antiquewhite;
+  border-bottom: 4px solid antiquewhite;
+}
+
+.border-bottom {
+  grid-column: 2 / -2;
+  grid-row: -2 / -1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  justify-items: center;
+  color: sienna;
+  font-size: 1.28rem;
+  font-weight: 500;
+  border-left: 4px solid antiquewhite;
+  border-right: 4px solid antiquewhite;
+}
+
+.board-center {
+  grid-column: 2 / -2;
+  grid-row: 2 / -2;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  border: 4px solid sienna;
+}
+
+.board-center div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black {
+  background-color: sienna;
+  aspect-ratio: 1 / 1;
+}
+
+.chessman {
+  width: 80%;
+}
+
+/* SECTION RIGHT */
+
+.section-right {
+  min-width: 30rem;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  width: 75%;
+  height: 90%;
+  border: 4px solid antiquewhite;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 4fr 1.7fr;
+}
+
+.clock-left,
+.clock-right,
+.moves-notes {
+  border: 4px solid #faebd7;
+  width: 90%;
+  height: 90%;
+  align-self: center;
+  justify-self: center;
+}
+
+.moves-notes,
+.six-buttons {
+  /* border: 4px solid antiquewhite; */
+  grid-column: 1 / -1;
+  width: 95%;
+  height: 95%;
+  align-self: center;
+  justify-self: center;
+}
+
+.six-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: sienna;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  /* font-family: inherit; */
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: #faebd7;
+}
+
+/* FOOTER */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5rem;
+  align-items: center;
+  background-color: sienna;
+  color: white;
+  font-size: 1.6rem;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  /* height: 5rem; */
+}
+.copyright {
+  margin-left: 3rem;
+  grid-column: 1 / 2;
+  justify-self: left;
+}
+
+.tagline {
+  font-style: italic;
+  grid-column: 2 / 3;
+  justify-self: center;
+}
+
+.e-mail {
+  margin-right: 3rem;
+  grid-column: 3 / 4;
+  justify-self: right;
+}
