@@ -68,15 +68,67 @@ h1 {
   min-width: 30rem;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  width: 75%;
   height: 90%;
-  justify-self: center;
+  display: grid;
+}
+
+.side-board-container {
+  display: grid;
+  grid-template-columns: 0.5fr 8fr 0.5fr;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.side-board-black,
+.side-board-white {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 1fr;
+  aspect-ratio: 4 / 1;
   border: 4px solid antiquewhite;
+}
+
+.side-board-white {
+  margin-top: auto;
+}
+
+.side-board-black div,
+.side-board-white div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color {
+  background-color: antiquewhite;
+}
+
+.piece {
+  width: 90%;
+}
+
+.description {
+  width: 75%;
+  align-self: center;
+  justify-self: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  border: 4px solid antiquewhite;
+}
+
+.description p:first-child {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.description p:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 /* SECTION CHESS BORDER */
 
-.сhess-board {
+.chess-board {
   display: grid;
   grid-template-columns: 0.5fr repeat(8, 1fr) 0.5fr;
   grid-template-rows: 0.5fr repeat(8, 1fr) 0.5fr;
@@ -122,6 +174,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
+  /* position: relative; */
   border: 4px solid sienna;
 }
 
@@ -134,10 +187,6 @@ h1 {
 .black {
   background-color: sienna;
   aspect-ratio: 1 / 1;
-}
-
-.chessman {
-  width: 80%;
 }
 
 /* SECTION RIGHT */
@@ -173,6 +222,18 @@ h1 {
   height: 95%;
   align-self: center;
   justify-self: center;
+}
+
+.clock-left,
+.clock-right,
+.moves-notes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.temp-label {
+  font-size: 1.6rem;
+  padding: 1rem;
 }
 
 .six-buttons {
