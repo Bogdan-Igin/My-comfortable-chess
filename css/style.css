@@ -105,6 +105,11 @@ h1 {
 
 .piece {
   width: 90%;
+  transition: all 0.3s;
+}
+
+.piece:hover {
+  transform: translate(0, -3.5%);
 }
 
 .description {
@@ -112,7 +117,7 @@ h1 {
   align-self: center;
   justify-self: center;
   padding: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.4;
   border: 4px solid antiquewhite;
 }
@@ -234,6 +239,12 @@ h1 {
 .temp-label {
   font-size: 1.6rem;
   padding: 1rem;
+}
+
+.temp-label-1 {
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #eee;
 }
 
 .six-buttons {

@@ -1,0 +1,6 @@
+/* before 1536x864 px*/
+@media (max-width: 96em) {
+  .description {
+    font-size: 1.2rem;
+  }
+}
