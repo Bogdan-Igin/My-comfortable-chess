@@ -32,6 +32,8 @@ function drag(ev) {
   pieceBeingMoved = ev.target.id;
 }
 
+let illegalMove; // cancel an illigal move
+
 // do the drop, with checking if the space is occupied
 function drop(ev) {
   const data = ev.dataTransfer.getData("piece");
@@ -42,8 +44,13 @@ function drop(ev) {
   } else if (ev.target.id === pieceBeingMoved) { // handle a move to the same space
     // do nothing
   } else {
-        ev.target.appendChild(document.getElementById(data));
-        noteMoves(pieceBeingMoved, ev.target.id);
+    noteMoves(pieceBeingMoved, ev.target.id);
+    if (illegalMove === true) {
+      alert("This move haven't been done");
+      illegalMove = false;
+    } else {
+      ev.target.appendChild(document.getElementById(data));
+    }
   }
 }
 
@@ -71,7 +78,7 @@ buttonNote.addEventListener("click", function (e) {
 function noteMoves(moved, target) {
   if (startNote) {
     let figureMoved = moved.slice(6, moved.indexOf("-", 6)); // white or black moves?
-    
+
     if (moved.includes("white") && movesOrder === "white" && previousMove === "black") {
       movesWhite.push(`${figureMoved} ${target}`);
       console.log(movesWhite);
@@ -85,7 +92,8 @@ function noteMoves(moved, target) {
       previousMove = "black";
       showWhoseMove();
     } else {
-      alert("Illigal move!");
+      alert("Illegal move!");
+      illegalMove = true;
     }
   }
 
