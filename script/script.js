@@ -1,6 +1,8 @@
 ///////////////////////////////////////////////////////
 // DRAG & DROP PIESES
 
+let theSameTarget; // var to manage droping to the same space 
+
 // set class "piece" and allow drag attribute to all piece elements
 const allPieces = document.querySelectorAll(
   "div.side-board-black > div > img,  div.side-board-white > div > img"
@@ -10,7 +12,7 @@ allPieces.forEach((item) => {
   item.setAttribute("ondragstart", "drag(event)");
 });
 
-// set drop attributes to all spaces on board - central and aside
+// set drop attributes with its actions functions - to all spaces on board, central and aside
 const allBoardSpaces = document.querySelectorAll(
   "div.board-center > div, div.side-board-black > div,  div.side-board-white > div"
 );
@@ -27,6 +29,8 @@ function allowDrop(ev) {
 // setting what data will be dragged
 function drag(ev) {
   ev.dataTransfer.setData("piece", ev.target.id);
+  theSameTarget = ev.target.id;
+  console.log(theSameTarget);
 }
 
 // do the drop, with checking if the space is occupied
@@ -34,12 +38,15 @@ function drop(ev) {
   // ev.preventDefault();
   const data = ev.dataTransfer.getData("piece");
   const name = ev.target.nodeName;
-  console.log(name);
-  if (name === "IMG") {
+  console.dir(ev.target.id);
+  if (name === "IMG" && ev.target.id !== theSameTarget) {
     alert("Please remove the piece first");
+  } else if (ev.target.id === theSameTarget) {
+    // do nothing
   } else {
-    ev.target.appendChild(document.getElementById(data));
+        ev.target.appendChild(document.getElementById(data));
   }
+
 }
 
 ///////////////////////////////////////////////////////
@@ -145,3 +152,6 @@ buttonStart.addEventListener("click", function (e) {
     .getElementById("h1")
     .appendChild(document.getElementById("white-rook-2"));
 });
+
+///////////////////////////////////////////////////////
+// SETTING CASTLING
