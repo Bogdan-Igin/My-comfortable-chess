@@ -16,185 +16,197 @@
     <title>Bogdan chess app</title>
   </head>
   <body>
-    <header class="main-header">
-      <h1>My comfortable chess</h1>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="#" class="main-nav-link">About</a></li>
-          <li><a href="#" class="main-nav-link">Sign in</a></li>
-          <li><a href="#" class="main-nav-link">Log in</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="section-left">
-     <div class="side-board-container">
-      <div></div>
-      <div class="side-board-black">
-        <div class="color"><img src="img/chess-black-rook.png" class="black-rook" id="black-rook-1" alt=""></div>
-        <div><img src="img/chess-black-knight.png" class="black-knight" id="black-knight-1" alt=""></div>
-        <div class="color"><img src="img/chess-black-bishop.png" class="black-bishop" id="black-bishop-1" alt=""></div>
-        <div><img src="img/chess-black-queen.png" class="black-queen" id="black-queen" alt=""></div>
-        <div class="color"><img src="img/chess-black-king.png" class="black-king" id="black-king" alt=""></div>
-        <div><img src="img/chess-black-bishop.png" class="black-bishop" id="black-bishop-2" alt=""></div>
-        <div class="color"><img src="img/chess-black-knight.png" class="black-knight" id="black-knight-2"  alt=""></div>
-        <div><img src="img/chess-black-rook.png" class="black-rook" id="black-rook-2"  alt=""></div>
-        <div><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-1"  alt=""></div>
-        <div class="color"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-2"  alt=""></div>
-        <div><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-3"  alt=""></div>
-        <div class="color"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-4"  alt=""></div>
-        <div><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-5"  alt=""></div>
-        <div class="color"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-6"  alt=""></div>
-        <div><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-7"  alt=""></div>
-        <div class="color"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-8"  alt=""></div>
-      </div>
-      <div></div>
-     </div>
-     <div class="description">
-      <p>Hi there!</p>
-      <p>This is my very close pet-project for playing chess in my own way. I was a professional chess player in my childhood and I saved big love to this game!</p>
-      <p>At the moment you can play chess here in like of very nature maner when a player just take a piece and move it to an ather space just by the own hand. If a piece isn't in a game, a player put it aside of the board (leftside) on the special spaces. All of this imitate a very usual chess game with physical pieces.</p>
-      <p>So, just drag and drop pieces on the spaces. If you want to attack a piece of your competitor, remove this piece from the board first. Any pieces can stay at any board and aside spaces - equel to real phisical game. For setting all pieces on the start position pls press the "Start" button.</p>
-     </div>
-     <div class="side-board-container">
-      <div></div>
-      <div class="side-board-white">
-        <div class="color"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-1" alt=""></div>
-        <div><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-2" alt=""></div>
-        <div class="color"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-3" alt=""></div>
-        <div><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-4" alt=""></div>
-        <div class="color"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-5" alt=""></div>
-        <div><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-6" alt=""></div>
-        <div class="color"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-7" alt=""></div>
-        <div><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-8" alt=""></div>
-        <div><img src="img/chess-white-rook.png" class="white-rook" id="white-rook-1"  alt=""></div>
-        <div class="color"><img src="img/chess-white-knight.png" class="white-knight" id="white-knight-1"  alt=""></div>
-        <div><img src="img/chess-white-bishop.png" class="white-bishop" id="white-bishop-1"  alt=""></div>
-        <div class="color"><img src="img/chess-white-queen.png" class="white-queen" id="white-queen"  alt=""></div>
-        <div><img src="img/chess-white-king.png" class="white-king" id="white-king"  alt=""></div>
-        <div class="color"><img src="img/chess-white-bishop.png" class="white-bishop" id="white-bishop-2"  alt=""></div>
-        <div><img src="img/chess-white-knight.png" class="white-knight" id="white-knight-2"  alt=""></div>
-        <div class="color"><img src="img/chess-white-rook.png" class="white-rook" id="white-rook-2"  alt=""></div>
-      </div>
-      <div></div>
-     </div>
-    </section>
-    <section class="chess-board">
-      <div class="border-left">
-        <div>8</div>
-        <div>7</div>
-        <div>6</div>
-        <div>5</div>
-        <div>4</div>
-        <div>3</div>
-        <div>2</div>
-        <div>1</div>
-      </div>
-      <div class="border-bottom">
-        <div>A</div>
-        <div>B</div>
-        <div>C</div>
-        <div>D</div>
-        <div>E</div>
-        <div>F</div>
-        <div>G</div>
-        <div>H</div>
-      </div>
-      <div class="board-center">
-        <div id="a8"></div>
-        <div id="b8" class="black"></div>
-        <div id="c8"></div>
-        <div id="d8" class="black"></div>
-        <div id="e8"></div>
-        <div id="f8" class="black"></div>
-        <div id="g8"></div>
-        <div id="h8" class="black"></div>
-        <div id="a7" class="black"></div>
-        <div id="b7"></div>
-        <div id="c7" class="black"></div>
-        <div id="d7"></div>
-        <div id="e7" class="black"></div>
-        <div id="f7"></div>
-        <div id="g7" class="black"></div>
-        <div id="h7"></div>
-        <div id="a6"></div>
-        <div id="b6" class="black"></div>
-        <div id="c6"></div>
-        <div id="d6" class="black"></div>
-        <div id="e6"></div>
-        <div id="f6" class="black"></div>
-        <div id="g6"></div>
-        <div id="h6" class="black"></div>
-        <div id="a5" class="black"></div>
-        <div id="b5"></div>
-        <div id="c5" class="black"></div>
-        <div id="d5"></div>
-        <div id="e5" class="black"></div>
-        <div id="f5"></div>
-        <div id="g5" class="black"></div>
-        <div id="h5"></div>
-        <div id="a4"></div>
-        <div id="b4" class="black"></div>
-        <div id="c4"></div>
-        <div id="d4" class="black"></div>
-        <div id="e4"></div>
-        <div id="f4" class="black"></div>
-        <div id="g4"></div>
-        <div id="h4" class="black"></div>
-        <div id="a3" class="black"></div>
-        <div id="b3"></div>
-        <div id="c3" class="black"></div>
-        <div id="d3"></div>
-        <div id="e3" class="black"></div>
-        <div id="f3"></div>
-        <div id="g3" class="black"></div>
-        <div id="h3"></div>
-        <div id="a2"></div>
-        <div id="b2" class="black"></div>
-        <div id="c2"></div>
-        <div id="d2" class="black"></div>
-        <div id="e2"></div>
-        <div id="f2" class="black"></div>
-        <div id="g2"></div>
-        <div id="h2" class="black"></div>
-        <div id="a1" class="black"></div>
-        <div id="b1"></div>
-        <div id="c1" class="black"></div>
-        <div id="d1"></div>
-        <div id="e1" class="black"></div>
-        <div id="f1"></div>
-        <div id="g1" class="black"></div>
-        <div id="h1"></div>
-      </div>
-    </section>
-    <section class="section-right">
-      <div class="clock-left">
-        <p class="temp-label">The player's clock</p>
-      </div>
-      <div class="clock-right">
-        <p class="temp-label">The competitor's clock</p>
-      </div>
-      <div class="moves-notes">
-        <div class="moves-notes-content"></div>
-        <div class="moves-notes-content">
-          <button class="btn-notes">Note moves</button>
-          <p class="move-for">Move for</p>
-          <p class="whose-move"></p>
+    <div class="main-grid">
+      <header class="main-header">
+        <h1>My comfortable chess</h1>
+        <span>Read "ABOUT" FIRST!</span>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="#" class="main-nav-link">Main</a></li>
+            <li><a href="about.html" class="main-nav-link">About</a></li>
+            <li><a href="#" style="background-color: #aaa" class="main-nav-link under-constr">How to use</a></li>
+            <li><a href="#" style="background-color: #aaa" class="main-nav-link under-constr">Log in</a></li>
+            <li><a href="#" style="background-color: #aaa" class="main-nav-link under-constr">Sign up</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="section-left">
+      <div class="side-board-container">
+        <div></div>
+        <div class="side-board-black">
+          <div id="a8-side"><img src="img/chess-black-rook.png" class="black-rook" id="black-rook-1" alt=""></div>
+          <div id="b8-side" class="color"><img src="img/chess-black-knight.png" class="black-knight" id="black-knight-1" alt=""></div>
+          <div id="c8-side"><img src="img/chess-black-bishop.png" class="black-bishop" id="black-bishop-1" alt=""></div>
+          <div id="d8-side" class="color"><img src="img/chess-black-queen.png" class="black-queen" id="black-queen" alt=""></div>
+          <div id="e8-side"><img src="img/chess-black-king.png" class="black-king" id="black-king" alt=""></div>
+          <div id="f8-side" class="color"><img src="img/chess-black-bishop.png" class="black-bishop" id="black-bishop-2" alt=""></div>
+          <div id="g8-side"><img src="img/chess-black-knight.png" class="black-knight" id="black-knight-2"  alt=""></div>
+          <div id="h8-side" class="color"><img src="img/chess-black-rook.png" class="black-rook" id="black-rook-2"  alt=""></div>
+          <div id="a7-side" class="color"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-1"  alt=""></div>
+          <div id="b7-side"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-2"  alt=""></div>
+          <div id="c7-side" class="color"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-3"  alt=""></div>
+          <div id="d7-side"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-4"  alt=""></div>
+          <div id="e7-side" class="color"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-5"  alt=""></div>
+          <div id="f7-side"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-6"  alt=""></div>
+          <div id="g7-side" class="color"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-7"  alt=""></div>
+          <div id="h7-side"><img src="img/chess-black-pawn.png" class="black-pawn" id="black-pawn-8"  alt=""></div>
         </div>
+        <div></div>
       </div>
-      <div class="six-buttons">
-        <button class="btn">Move back</button>
-        <button class="btn">Move forward</button>
-        <button class="btn">I give up!</button>   
-        <button class="btn btn-start">Start</button>
-        <button class="btn">Pause</button>
-        <button class="btn">End with draw</button>
+      <div class="buttons-container-left">
+        <div></div>
+        <div class="buttons-section-left">
+          <button>GAME</button>
+          <button>ANALYSIS</button>
+          <button>All to the board</button>
+          <button>All from the board</button>
+          <button>Theme</button>
+          <button>(reserve)</button>
+        </div>
+        <div></div>
       </div>
-    </section>
-    <footer>
-      <p class="copyright">Bogdan Igin &#169 2022</p>
-      <p class="tagline">It's all about power of grid!</p>
-      <p class="e-mail">my e-mail: ********@gmail.com</p>
-    </footer>
-    <script type="text/javascript" src="script/script.js"></script>
+      <div class="side-board-container">
+        <div></div>
+        <div class="side-board-white">
+          <div id="a2-side"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-1" alt=""></div>
+          <div id="b2-side" class="color"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-2" alt=""></div>
+          <div id="c2-side"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-3" alt=""></div>
+          <div id="d2-side" class="color"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-4" alt=""></div>
+          <div id="e2-side"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-5" alt=""></div>
+          <div id="f2-side" class="color"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-6" alt=""></div>
+          <div id="g2-side"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-7" alt=""></div>
+          <div id="h2-side" class="color"><img src="img/chess-white-pawn.png" class="white-pawn" id="white-pawn-8" alt=""></div>
+          <div id="a1-side" class="color"><img src="img/chess-white-rook.png" class="white-rook" id="white-rook-1"  alt=""></div>
+          <div id="b1-side"><img src="img/chess-white-knight.png" class="white-knight" id="white-knight-1"  alt=""></div>
+          <div id="c1-side" class="color"><img src="img/chess-white-bishop.png" class="white-bishop" id="white-bishop-1"  alt=""></div>
+          <div id="d1-side"><img src="img/chess-white-queen.png" class="white-queen" id="white-queen"  alt=""></div>
+          <div id="e1-side" class="color"><img src="img/chess-white-king.png" class="white-king" id="white-king"  alt=""></div>
+          <div id="f1-side"><img src="img/chess-white-bishop.png" class="white-bishop" id="white-bishop-2"  alt=""></div>
+          <div id="g1-side" class="color"><img src="img/chess-white-knight.png" class="white-knight" id="white-knight-2"  alt=""></div>
+          <div id="h1-side"><img src="img/chess-white-rook.png" class="white-rook" id="white-rook-2"  alt=""></div>
+        </div>
+        <div></div>
+      </div>
+      </section>
+      <section class="chess-board">
+        <div class="border-left">
+          <div>8</div>
+          <div>7</div>
+          <div>6</div>
+          <div>5</div>
+          <div>4</div>
+          <div>3</div>
+          <div>2</div>
+          <div>1</div>
+        </div>
+        <div class="border-bottom">
+          <div>A</div>
+          <div>B</div>
+          <div>C</div>
+          <div>D</div>
+          <div>E</div>
+          <div>F</div>
+          <div>G</div>
+          <div>H</div>
+        </div>
+        <div class="board-center">
+          <div id="a8"></div>
+          <div id="b8" class="black"></div>
+          <div id="c8"></div>
+          <div id="d8" class="black"></div>
+          <div id="e8"></div>
+          <div id="f8" class="black"></div>
+          <div id="g8"></div>
+          <div id="h8" class="black"></div>
+          <div id="a7" class="black"></div>
+          <div id="b7"></div>
+          <div id="c7" class="black"></div>
+          <div id="d7"></div>
+          <div id="e7" class="black"></div>
+          <div id="f7"></div>
+          <div id="g7" class="black"></div>
+          <div id="h7"></div>
+          <div id="a6"></div>
+          <div id="b6" class="black"></div>
+          <div id="c6"></div>
+          <div id="d6" class="black"></div>
+          <div id="e6"></div>
+          <div id="f6" class="black"></div>
+          <div id="g6"></div>
+          <div id="h6" class="black"></div>
+          <div id="a5" class="black"></div>
+          <div id="b5"></div>
+          <div id="c5" class="black"></div>
+          <div id="d5"></div>
+          <div id="e5" class="black"></div>
+          <div id="f5"></div>
+          <div id="g5" class="black"></div>
+          <div id="h5"></div>
+          <div id="a4"></div>
+          <div id="b4" class="black"></div>
+          <div id="c4"></div>
+          <div id="d4" class="black"></div>
+          <div id="e4"></div>
+          <div id="f4" class="black"></div>
+          <div id="g4"></div>
+          <div id="h4" class="black"></div>
+          <div id="a3" class="black"></div>
+          <div id="b3"></div>
+          <div id="c3" class="black"></div>
+          <div id="d3"></div>
+          <div id="e3" class="black"></div>
+          <div id="f3"></div>
+          <div id="g3" class="black"></div>
+          <div id="h3"></div>
+          <div id="a2"></div>
+          <div id="b2" class="black"></div>
+          <div id="c2"></div>
+          <div id="d2" class="black"></div>
+          <div id="e2"></div>
+          <div id="f2" class="black"></div>
+          <div id="g2"></div>
+          <div id="h2" class="black"></div>
+          <div id="a1" class="black"></div>
+          <div id="b1"></div>
+          <div id="c1" class="black"></div>
+          <div id="d1"></div>
+          <div id="e1" class="black"></div>
+          <div id="f1"></div>
+          <div id="g1" class="black"></div>
+          <div id="h1"></div>
+        </div>
+      </section>
+      <section class="section-right">
+        <div class="clock-left">
+          <p class="temp-label">White's clock</p>
+        </div>
+        <div class="clock-right">
+          <p class="temp-label">Black's clock</p>
+        </div>
+        <div class="moves-notes">
+          <!-- <div class="moves-notes-content"></div> -->
+          <div class="moves-notes-content">
+            <p>Under construction</p>
+            <!-- <button class="btn-notes">Note moves</button>
+            <p class="move-for">Move for</p>
+            <p class="whose-move"></p> -->
+          </div>
+        </div>
+        <div class="six-buttons">
+          <button class="btn">Move back</button>
+          <button class="btn">Move forward</button>
+          <button class="btn">I give up!</button>   
+          <button class="btn btn-start">Start</button>
+          <button class="btn">Pause</button>
+          <button class="btn">End with draw</button>
+        </div>
+      </section>
+      <footer>
+        <p class="copyright">Bogdan Igin &#169 2022-2023</p>
+        <p class="tagline">It's all about power of grid!</p>
+        <p class="e-mail">my e-mail: ********@gmail.com</p>
+      </footer>
+      <script type="text/javascript" src="script/script.js"></script>
+    </div>
   </body>
 </html>

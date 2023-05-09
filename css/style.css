@@ -10,7 +10,7 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.main-grid {
   display: grid;
   grid-template-rows: 6rem 1fr 5rem;
   grid-template-columns: 1fr 1fr 1fr;
@@ -37,6 +37,11 @@ h1 {
   text-align: left;
   margin-left: 4rem;
   font-size: 3.1rem;
+}
+
+.main-header span {
+  font-size: 2rem;
+  
 }
 
 .main-nav {
@@ -112,23 +117,35 @@ h1 {
   transform: translate(0, -3.5%);
 }
 
-.description {
-  width: 75%;
-  align-self: center;
+.buttons-container-left {
+  display: grid;
+  grid-template-columns: 0.5fr 8fr 0.5fr;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.buttons-section-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-self: center;
-  padding: 1rem;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  border: 4px solid antiquewhite;
+  gap: 1.2rem;
+  width: 80%;
+  
 }
 
-.description p:first-child {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.description p:not(:last-child) {
-  margin-bottom: 1rem;
+.buttons-section-left button {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: sienna;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 /* SECTION CHESS BORDER */
@@ -234,7 +251,7 @@ h1 {
 .moves-notes {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .temp-label {
@@ -243,7 +260,7 @@ h1 {
 }
 
 .moves-notes-content {
-  width: 50%;
+  width: 100%;
   height: 100%;
   padding: 5px;
   background-color: bisque;
@@ -251,6 +268,14 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: start;
+}
+
+.moves-notes-content p {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  background-color: #bbb;
 }
 
 .btn-notes {
@@ -332,4 +357,25 @@ footer {
   margin-right: 3rem;
   grid-column: 3 / 4;
   justify-self: right;
+}
+
+/* PAGE ABOUT */
+
+.main-about {
+  grid-column: 1 / -1;
+}
+
+.text-about {
+  font-size: 1.6rem;
+  color: #333;
+  width: 80rem;
+  padding: 3.2rem;
+  margin: auto;
+  align-self: start;
+  border: solid 4px antiquewhite;
+}
+
+.text-about p {
+  margin-bottom: 1.6rem;
+  line-height: 1.6;
 }
